@@ -82,7 +82,7 @@ Where is source code? - <a href='https://t.me/MnTUploaderBot'>ᴄʟɪᴄᴋ ʜ�
 Developer - <a href='https://t.me/MnTUploaderBot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
 <b>DEV:</b>
-- 🦋 <a href=https://t.me/MnTUploaderBot>MnT Admin</a> 🦋"""
+- 🦋 <a href='https://t.me/MnTUploaderBot'>MnT Admin</a> 🦋"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and  will respond whenever that keyword hits the message
