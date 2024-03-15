@@ -36,8 +36,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🤥 Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('🔔 Updates', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🤥 𝗛𝗲𝗹𝗽', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('🔔 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/MnT_Linkss')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,11 +49,11 @@ async def save_group(bot, message):
         chatTitle = message.chat.title
         lz_buttons = [
             [
-                InlineKeyboardButton('🎉 Mark Verified 💞', callback_data=f"verify_lazy_group:{chatTitle}:{chatID}")
+                InlineKeyboardButton('🎉 🇲🇦🇷🇰 🇻🇪🇷🇮🇫🇮🇪🇩 💞', callback_data=f"verify_lazy_group:{chatTitle}:{chatID}")
             ],[
-                InlineKeyboardButton('⚙ Ban Chat', callback_data=f"bangrpchat:{chatTitle}:{chatID}")
+                InlineKeyboardButton('⚙ 🇧🇦🇳 🇨🇭🇦🇹', callback_data=f"bangrpchat:{chatTitle}:{chatID}")
             ],[
-                InlineKeyboardButton('🚮 Close', callback_data="close_data")
+                InlineKeyboardButton('🚮 🇨🇱🇴🇸🇪', callback_data="close_data")
             ]]
         lazy_markup=InlineKeyboardMarkup(lz_buttons)
         await bot.send_message(LAZY_GROUP_LOGS,
@@ -125,7 +125,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \nMy admin has told me to leave from group, isiliye main chali 🤪 ! If you wanna add me again contact my support group.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \nMy admin has told me to leave from group, so i go! If you wanna add me again contact my Support Group or My Owner</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
@@ -246,7 +246,7 @@ async def unban_a_user(bot, message):
             return await message.reply(f"{k.mention} is not yet banned.")
         await db.remove_ban(k.id)
         temp.BANNED_USERS.remove(k.id)
-        await message.reply(f"Successfully unbanned ! Sudhrr ja babu {k.mention}")
+        await message.reply(f"Successfully unbanned ! {k.mention}")
 
 
     
